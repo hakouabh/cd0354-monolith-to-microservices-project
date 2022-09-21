@@ -26,8 +26,12 @@ spec:
           resources:
             requests:
               cpu: "250m"
+              memory: "100Mi"
             limits:
               cpu: "500m"
+              memory: "200Mi"
+          command: ["udagram-api-feed"]
+          args: ["--vm", "1", "--vm-bytes", "150M", "--vm-hang", "1"]
           env:
             - name: POSTGRES_USERNAME
               valueFrom:
