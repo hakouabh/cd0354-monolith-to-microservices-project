@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: hakouabh/udagram-frontend:local
+          image: hakouabh/udagram-frontend:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
